@@ -4,7 +4,7 @@ import {
   writeJsonFileSync,
   getDirectoryBy,
   fileExist,
-} from 'a-node-tools';
+} from '@vvi/node';
 import { readdirSync } from 'node:fs';
 import { basename, extname } from 'node:path';
 
@@ -19,6 +19,8 @@ const dependencies = packageJson.dependencies;
   'private',
   'dependencies',
   'packageManager',
+  'type',
+  'jja',
 ].forEach(key => delete packageJson[key]);
 const esPrefix = 'es'; // es 前缀
 const cjsPrefix = 'cjs'; // cjs 前缀
@@ -86,7 +88,7 @@ for (const childrenName of srcChildrenList) {
 packageJson = {
   ...packageJson,
   main: `${cjsPrefix}/index.js`,
-  module: `${esPrefix}/index.js`,
+  // module: `${esPrefix}/index.js`,
   types: `${dtsPrefix}/index.d.ts`,
   author: {
     name: '泥豆君',
