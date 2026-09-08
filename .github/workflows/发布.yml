@@ -1,4 +1,5 @@
-name: 发布到 npm
+name: CI & Publish
+
 on:
   push:
     branches: '*'
@@ -46,15 +47,15 @@ jobs:
       - name: 初始化 Node 并设定 Node 版本
         uses: actions/setup-node@v4
         with:
-          node-version: 24
-          registry-url: https://registry.npmjs.org
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
           always-auth: false # 强制使用 OIDC 而非令牌
 
-      - name: clean npm auth
-        run: |
-          npm config delete //registry.npmjs.org/:_authToken
-          rm -f ~/.npmrc
-        shell: bash
+      # - name: clean npm auth
+      #   run: |
+      #     npm config delete //registry.npmjs.org/:_authToken
+      #     rm -f ~/.npmrc
+      #   shell: bash
 
       - name: pnpm 安装
         uses: pnpm/action-setup@v2
@@ -74,9 +75,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
+      # - name: 构建 pnpm 全局 bin
+
       - name: 发布到 npm
         env:
           NPM_CONFIG_USERCONFIG: /dev/null # 强制忽略本地配置
+          # NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
         run: |
           chmod +x ./scripts/pub.sh
           ./scripts/pub.sh
