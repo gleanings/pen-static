@@ -114,15 +114,15 @@ packageJson = {
   },
 
   keywords: ['pen-static', 'mudbean', '终端', '终端彩绘', 'vvi'],
-  homepage: 'https://npm.lmssee.com/pen-static',
+  homepage: 'https://npm.gleanings.cn/pen-static',
   dependencies,
   bugs: {
-    url: 'https://github.com/MrMudBean/pen-static/issues',
+    url: 'https://github.com/gleanings/pen-static/issues',
     email: 'Mr.MudBean@outlook.com',
   },
   repository: {
     type: 'git',
-    url: 'git+https://github.com/MrMudBean/pen-static.git',
+    url: 'git+https://github.com/gleanings/pen-static.git',
   },
   publishConfig: {
     access: 'public',
