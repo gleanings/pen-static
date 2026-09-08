@@ -40,7 +40,7 @@
     "eslint-plugin-jsonc": "^3.4.2",
     "eslint-plugin-unused-imports": "^4.4.1",
     "globals": "^17.12.0",
-    "gvv": "^1.0.2",
+    "gvv": "^1.1.0",
     "jja": "^2.5.5",
     "pjj": "^1.0.7",
     "prettier": "^3.9.6",

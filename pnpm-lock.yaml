@@ -58,13 +58,13 @@ importers:
         version: 3.4.2(eslint@9.39.5(supports-color@7.2.0))
       eslint-plugin-unused-imports:
         specifier: ^4.4.1
-        version: 4.4.1(eslint@9.39.5(supports-color@7.2.0))
+        version: 4.4.1(@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(supports-color@7.2.0))
       globals:
         specifier: ^17.12.0
         version: 17.12.0
       gvv:
-        specifier: ^1.0.2
-        version: 1.0.2
+        specifier: ^1.1.0
+        version: 1.1.0
       jja:
         specifier: ^2.5.5
         version: 2.5.5
@@ -1188,8 +1188,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  gvv@1.0.2:
-    resolution: {integrity: sha512-3FdaDxYXwbk0EHTU/Er3O09JrlnjyjQBBHe+UC4zPhq5KvD7no6D2arrbIqX7Y0qhHfpNNupS2W8vFqMviCuJQ==}
+  gvv@1.1.0:
+    resolution: {integrity: sha512-8WbakvTKXwM34PrGDbrjyR8Lwc1ggW18c1e3nRLCfyCyvX4KWfeiO8ylZzOL8FSIsI7Q23fqtY9Qy/sLPrGLbg==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -2840,9 +2840,11 @@ snapshots:
     transitivePeerDependencies:
       - '@eslint/json'
 
-  eslint-plugin-unused-imports@4.4.1(eslint@9.39.5(supports-color@7.2.0)):
+  eslint-plugin-unused-imports@4.4.1(@typescript-eslint/eslint-plugin@8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(supports-color@7.2.0)):
     dependencies:
       eslint: 9.39.5(supports-color@7.2.0)
+    optionalDependencies:
+      '@typescript-eslint/eslint-plugin': 8.70.0(@typescript-eslint/parser@8.70.0(eslint@9.39.5(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3))(eslint@9.39.5(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.9.3)
 
   eslint-scope@8.4.0:
     dependencies:
@@ -3066,7 +3068,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  gvv@1.0.2:
+  gvv@1.1.0:
     dependencies:
       '@vvi/command': 4.0.2
       '@vvi/is': 2.0.7
