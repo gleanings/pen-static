@@ -114,7 +114,7 @@ packageJson = {
   },
 
   keywords: ['pen-static', 'mudbean', '终端', '终端彩绘', 'vvi'],
-  homepage: 'https://npm.gleanings.cn/pen-static',
+  homepage: 'https://npms.gleanings.cn/pen-static',
   dependencies,
   bugs: {
     url: 'https://github.com/gleanings/pen-static/issues',
