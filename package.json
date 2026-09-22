@@ -45,7 +45,6 @@
     "jja": "^2.5.5",
     "pjj": "^1.0.7",
     "prettier": "^3.9.8",
-    "qqi": "^1.0.2",
     "rollup": "^4.63.4",
     "rollup-plugin-cleanup": "^3.2.1",
     "rollup-plugin-copy": "^3.5.0",
